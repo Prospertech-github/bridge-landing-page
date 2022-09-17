@@ -1,0 +1,150 @@
+
+nav{
+  height: 5rem;
+  width: 100vw;
+  /* background: red; */
+  display: grid;
+  place-items: center;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 99;
+  }
+
+  /* only show on medium and small devices */
+  .nav__toggle-btn{
+    display: none;
+  }
+  .nav__container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav__links{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .nav__links a{
+    transition: all 500ms ease;
+    color: #2D3134;
+  }
+  .nav__links a:hover{
+    color: rgb(4,150,255);
+  }
+
+  .active-nav{
+    position: relative;
+  }
+
+  .active-nav::after{
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 0.2rem;
+    background: rgb(4,150,255);
+    position: absolute;
+    left: calc(39% - 0.6rem);
+
+    /* transform: rotate(45deg); */
+    /* margin-top: 0.9rem; */
+  }
+
+  /* Media  Queries (for medium and small screen*/
+@media screen and (max-width: 1024px){
+  .nav__toggle-btn{
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav__links{
+  position: absolute;
+  top:100%;
+  right: 0;
+  flex-direction: column;
+  gap: 0;
+}
+
+.active-nav, .active-nav::after{
+  display: none;
+}
+
+.nav__links li{
+  height: 3rem;
+  width: 100%;
+  box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+.nav__links li a{
+  background: rgb(4,150,255);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem 1rem 3rem;
+  /* color:#2D3134; */
+  color:white;
+  
+}
+
+.nav__links a:hover{
+  color:#2D3134;
+}
+
+.show__nav{
+  display: flex;
+}
+
+.hide__nav{
+  display: none;
+}
+}
+/* nav{
+  height: 5rem;
+  width: 100vw; */
+  /* background: blue; */
+
+  /* display: grid;
+  place-items: center; */
+  /* position: fixed; */
+  /* top: 0;/ */
+ 
+  /* left: 0;
+  right: 0; */
+  /* z-index: 99; */
+  /* } */
+
+  /* .nav__container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 50rem; */
+    /* background: red; */
+  /* } */
+
+  
+
+  /* .nav__links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 1rem;
+    
+  }
+
+  .nav__links a{
+    text-decoration: none;
+    color:#2D3134 ;
+  }
+  .nav__toggle-btn{
+    display: none;
+  } */
+  

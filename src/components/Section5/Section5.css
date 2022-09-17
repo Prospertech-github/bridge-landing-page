@@ -1,0 +1,113 @@
+.main__head{
+  height: 100vh!important;
+}
+.heading-writeup1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -2rem;
+  width: 50%;
+
+}
+
+.heading-writeup1 h3{
+  
+  font-size: 40px;
+  font-weight: bold;
+  
+  
+}
+
+
+.heading-writeup1 span{
+  color:rgb(4,150,255);
+}
+
+
+.heading-writeup2 p{
+  font-weight: light;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 0.9rem;
+  /* font-size: 20px; */
+  width: 500px;
+  
+}
+
+.heading-writeup2 p a{
+  color:rgb(4,150,255);
+  cursor: pointer;
+
+}
+
+.heading-writeup2{
+  margin-top: -6rem;
+  height: 4rem;
+}
+
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* border: 2px solid purple; */
+  margin-top: -5rem;
+  width: 45vw;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: white;
+  border: 2px solid white;
+  resize: none;
+  color: black;
+}
+
+.button{
+  padding: 10px;
+  color: white;
+  background: rgb(4,150,255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+  .heading-writeup1 h3{
+  
+    font-size: 40px;
+    font-weight: bold;
+    
+    
+  }
+  .heading-writeup1 {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px){
+.heading-writeup1{
+  width: 400px;
+  margin-left: -1rem;
+  padding: 2px;
+  /* width: 10rem;
+  height: 5rem; */
+}
+
+.heading-writeup1 h3{
+  font-size: 30px; 
+}
+
+.heading-writeup2 p{
+  margin-top: -5rem;
+  font-size: 12px;
+  width: 79%;
+  margin-left: 3rem;
+}
+.heading-writeup2{
+  margin-top: 1rem;
+}
+
+}
