@@ -13,6 +13,11 @@
 body{
   background: #F9FAFA;
   font-family: 'Inter', sans-serif;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+  overflow-x: hidden;
 }
 
 
@@ -25,7 +30,7 @@ body{
 
 .container{
   width:var(--container-width-lg);
-  max-width: 1920px;
+  max-width: 1440px;
   margin-inline: auto;
 }
 

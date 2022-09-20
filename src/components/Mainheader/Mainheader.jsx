@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 import './Mainheader.css';
 
 const Mainheader = () => {
   return (
+    <>
+    <Navbar />
     <header>
       <div className=" container main__header">
         <div className="header-writeup1">
@@ -14,6 +17,7 @@ const Mainheader = () => {
 
       </div>
     </header>
+    </>
   )
 }
 
