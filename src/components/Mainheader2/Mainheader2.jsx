@@ -11,13 +11,16 @@ const Mainheader2 = () => {
             <h3><span>Join us</span> when we launch</h3>
         </div>
         <div  className="head-writeup2">
-        <p>We are working round the clock to make sure we serve you with the<br/>best possible experience. Become part of Bridge today!</p>
+        <p>We are working round the clock to make sure we serve you with the best possible experience. Become part of Bridge today!</p>
         </div>
 
         <div className='input__form'>
-          <i className='icon1'><FiMail/></i>
-          <input className="input__field" type='text' placeholder="Enter your email address" focus/>
-          <button className="sub-button" type='submit'>Get access</button>
+          {/* style the div and the icons and uput field */}
+          <div className="input__div">
+            <i className='icon1'><FiMail/></i>
+            <input className="input__field" type='text' placeholder="Enter your email address" focus/>
+          </div>
+            <button className="sub-button" type='submit'>Get access</button>
         </div>
       </div>
     </div>

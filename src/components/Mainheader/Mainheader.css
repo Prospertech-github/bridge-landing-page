@@ -1,81 +1,48 @@
-.main__header{
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  margin-top: 10rem;
-  /* border: 2px solid green; */
+.main__header {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	margin-top: 10rem;
 }
 
-.header-writeup1{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: -14rem;
-  /* border: 2px solid yellow; */
-  width: 50%;
-
+.header-writeup1 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
 }
-.header-writeup1 h3{
-  
-  font-size: 50px;
-  font-weight: bold;
-  
-  
+.header-writeup1 h3 {
+	font-size: 50px;
+	font-weight: bold;
 }
 
-.header-writeup1 span{
-  color:rgb(4,150,255);
+.header-writeup1 span {
+	color: rgb(4, 150, 255);
 }
 
-.header-writeup2 p{
-  font-weight: light;
-  line-height: 25px;
-  /* font-size: 20px; */  
+.header-writeup2 p {
+	font-weight: light;
+	line-height: 1.5;
+	width: 100%;
+	height: 100%;
 }
 
-.header-writeup2{
-  /* border: 2px solid black; */
-  margin-top: -38rem;
-}
+@media screen and (max-width: 540px) {
+	.main__header {
+		margin-top: 10rem;
+		gap: 1rem;
+	}
+	.header-writeup1 {
+		width: var(--container-width-sm);
+	}
 
-@media screen and (max-width: 1024px){
-  .header-writeup2 p{
-    /* margin-top: 4rem; */
-    margin-top: -3rem;
-  }
-
-  .header-writeup1{
-    /* border: 2px solid black; */
-    width: var(--container-width-md);
-    margin-top: -15rem;
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 400px){
-
-  .header-writeup1{
-    margin-top: -25rem;
-    width: var(--container-width-sm);
-    border: 2px solid black;
-  }
-
-.header-writeup1 h3{
-  font-size: 30px;
-
-}
-.header-writeup2{
-  border: 2px solid red;
-}
-  .header-writeup2 p{
-    /* margin-top: 4rem; */
-    margin-top: -9rem;
-    font-size: 12px;
-    text-align: center;
-    border: 2px solid purple;
-    line-break: none !important;
-    width: 100%;
-
-  }
+	.header-writeup1 h3 {
+		font-size: 30px;
+	}
+	.header-writeup2 p {
+		font-size: 12px;
+		text-align: center;
+		line-break: none !important;
+		width: 100%;
+	}
 }

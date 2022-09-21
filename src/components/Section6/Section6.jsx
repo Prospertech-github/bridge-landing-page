@@ -7,7 +7,7 @@ import "./Section6.css";
 
 const Section6 = () => {
   return (
-    <div className=" container main__head">
+    <div className=" container main__head-section6">
       <div className="H-writeup2">
         <p>The Bridge Blog</p>
       </div>

@@ -15,9 +15,9 @@ body{
   font-family: 'Inter', sans-serif;
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border: 2px solid red;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 
@@ -31,11 +31,14 @@ body{
 .container{
   width:var(--container-width-lg);
   max-width: 1440px;
+  width: 100%;
   margin-inline: auto;
+  /* overflow-x: hidden; */
 }
 
-/* img{
-  display: block;
-  object-fit: cover;
-  width: 100%;
-} */
+@media screen and (max-width: 540px) {
+  body{
+    width: 100%;
+    /* overflow-x: hidden; */
+  }
+}
