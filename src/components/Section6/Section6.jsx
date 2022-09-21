@@ -47,7 +47,7 @@ const Section6 = () => {
           </div>
         </article>
 
-        <article class=" container-blog2">
+        <article class="container-blog">
           <div class="blog-image">
             <img src={Blog2} alt="blog1" />
           </div>
@@ -77,7 +77,7 @@ const Section6 = () => {
           </div>
         </article>
 
-        <article class="container-blog3">
+        <article class="container-blog">
         <div class="blog-image">
           <img src={Blog3} alt="blog1"/>
         </div>
