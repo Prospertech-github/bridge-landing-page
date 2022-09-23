@@ -15,8 +15,6 @@ body{
   font-family: 'Inter', sans-serif;
   max-width: 1440px;
   width: 100%;
-  /* margin: 0 auto; */
-  border: 2px solid red;
   overflow-x: hidden;
 }
 
@@ -28,7 +26,8 @@ body{
 .container{
   width:var(--container-width-lg);
   max-width: 1240px;
-  width: 100%;
+  width: 100vw;
+  height: fit-content;
   margin-inline: auto;
   overflow-x: hidden;
 }

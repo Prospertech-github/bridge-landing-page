@@ -20,8 +20,7 @@ const Mainheader = () => {
 					<div className="header-writeup2">
 						<p>
 							Bridge helps you take full control of your business
-							with
-							<br /> robust inventory, invoicing, and customer
+							with robust inventory, invoicing, and customer
 							management
 						</p>
 					</div>

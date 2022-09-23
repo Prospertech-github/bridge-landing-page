@@ -15,7 +15,7 @@ const Navbar = () => {
     
 
     <nav>
-      <div className='container nav__container'>
+      <div className='nav__container'>
           <Link to='/' className='logo' onClick={()=> isNavShowing(false)}>
           <img src={Logo} alt='logo'/>
           </Link>
