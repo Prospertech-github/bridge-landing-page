@@ -22,7 +22,7 @@
 .head-writeup1 span {
 	color: rgb(4, 150, 255);
 }
-.head-writeup2{
+.head-writeup2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;

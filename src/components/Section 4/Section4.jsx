@@ -4,7 +4,7 @@ import Ellipse from '../../assets/Ellipse 2.png';
 import './Section4.css';
 
 const Section4 = () => {
-  return (
+	return (
 		<div className="main__header">
 			<div class="main__header-container">
 				<div className="ellipse-div">
@@ -27,7 +27,7 @@ const Section4 = () => {
 				</div>
 			</div>
 		</div>
-  );
-}
+	);
+};
 
-export default Section4
+export default Section4;

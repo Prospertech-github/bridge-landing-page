@@ -1,41 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=League+Spartan:wght@500&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;400;600&family=Ubuntu&display=swap');
 
-*, *::before, ::after{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
+*,
+*::before,
+::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
-body{
-  background: #F9FAFA;
-  font-family: 'Inter', sans-serif;
-  max-width: 1440px;
-  width: 100%;
-  overflow-x: hidden;
+body {
+	background: #f9fafa;
+	font-family: 'Inter', sans-serif;
+	max-width: 1440px;
+	width: 100%;
+	overflow-x: hidden;
 }
 
-:root{
-  --container-width-lg: 80%;
-  --container-width-md:90%;
+:root {
+	--container-width-lg: 80%;
+	--container-width-md: 90%;
 }
 
-.container{
-  width:var(--container-width-lg);
-  max-width: 1240px;
-  width: 100vw;
-  height: fit-content;
-  margin-inline: auto;
-  overflow-x: hidden;
+.container {
+	width: var(--container-width-lg);
+	max-width: 1240px;
+	width: 100vw;
+	height: fit-content;
+	margin-inline: auto;
+	overflow-x: hidden;
 }
 
 @media screen and (max-width: 540px) {
-  body{
-    width: 100%;
-    overflow-x: hidden;
-    border: 2px green;
-  }
+	body {
+		width: 100%;
+		overflow-x: hidden;
+		border: 2px green;
+	}
 }
