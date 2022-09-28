@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 540px) {
 	.main__head {
-		margin-top: 8rem;
+		margin-top: 80px;
 	}
 	.head-writeup1 {
 		width: var(--container-width-sm);
@@ -85,10 +85,11 @@
 		font-size: 30px;
 	}
 	.head-writeup2 {
-		margin-top: 1rem;
+		margin-top: 20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 	}
 	.head-writeup2 p {
 		line-height: 1.6;
@@ -104,6 +105,7 @@
 		display: flex;
 		justify-content: center;
 		gap: 2%;
+		width: 95%;
 	}
 	.input__div {
 		width: 65%;

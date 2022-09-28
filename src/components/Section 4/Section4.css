@@ -1,4 +1,4 @@
-.main__header {
+.main__header-section4 {
 	height: 100%;
 }
 .main__header-container {
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 540px) {
+	.main__header-section4{
+		margin-top: 80px;
+	}
 	.main__header-container {
 		width: 100%;
 		display: flex;
@@ -45,7 +48,7 @@
 		width: 100%;
 	}
 	.main__header-right {
-		margin-top: 5rem;
+		margin-top: 90px;
 		padding-left: 1rem;
 		width: 100%;
 	}

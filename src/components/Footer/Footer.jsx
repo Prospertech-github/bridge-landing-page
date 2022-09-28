@@ -8,40 +8,31 @@ import Logo from '../../assets/Group 24.png'
 
 const Footer = () => {
   return (
-    <footer>
+		<footer>
+			<div class="footer__socials">
+				<a href="https://www.facebook.com">
+					<FaFacebookF className="footer-icon" />
+				</a>
+				<a href="https://instagram.com">
+					<FiInstagram className="footer-icon" />
+				</a>
+				<a href="https://twitter.com">
+					<IoLogoTwitter className="footer-icon" />
+				</a>
+				<a href="https://twitter.com">
+					<FaLinkedinIn className="footer-icon" />
+				</a>
+			</div>
 
-<div class="footer__socials">
-  <a href='https://www.facebook.com'>
-  <FaFacebookF/>
-  </a>
-  <a href='https://instagram.com'>
-    <FiInstagram/>
-  </a>
-  <a href='https://twitter.com'>
-    <IoLogoTwitter/>
-  </a>
-  <a href='https://twitter.com'>
-    <FaLinkedinIn/>
-  </a>
-</div>
+			<a href="#" className="footer__logo">
+				<img src={Logo} />
+			</a>
 
-  <a href='#' className='footer__logo'>
-  <img src={Logo}/>
-</a>
-
-<div class="footer__copyright">
-  <small>&copy; 2022 Get Bridge. All rights reserved</small>
-</div>
-
-
-
-
-
-
-
-
-  </footer>
-  )
+			<div class="footer__copyright">
+				<small>&copy; 2022 Get Bridge. All rights reserved</small>
+			</div>
+		</footer>
+  );
 }
 
 export default Footer

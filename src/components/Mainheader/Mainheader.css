@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 540px) {
 	.main__header {
-		margin-top: 10rem;
+		margin-top: 70px;
 		gap: 1rem;
 	}
 	.header-writeup1 {
@@ -44,6 +44,7 @@
 	}
 	.header-writeup2 {
 		width: 75%;
+		margin-top: 18px;
 	}
 	.header-writeup2 p {
 		font-size: 12px;

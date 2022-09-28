@@ -5,7 +5,7 @@ import './Section4.css';
 
 const Section4 = () => {
 	return (
-		<div className="main__header">
+		<div className="main__header-section4">
 			<div class="main__header-container">
 				<div className="ellipse-div">
 					<img className="ellipse-img" src={Ellipse} alt="ellipse" />
