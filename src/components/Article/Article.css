@@ -1,14 +1,22 @@
 .article__container {
 	margin-top: 15rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 5rem;
+	/* gap: 5rem; */
+	padding: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
+.services-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width: 85%;
+	gap: 4rem;
+}
 .services {
 	background: #1a1a1a;
 	height: 7rem;
-  width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	place-items: center;

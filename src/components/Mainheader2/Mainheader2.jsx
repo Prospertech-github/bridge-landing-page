@@ -12,11 +12,7 @@ const Mainheader2 = () => {
 					</h3>
 				</div>
 				<div className="head-writeup2">
-					<p>
-						We are working round the clock to make sure we serve you
-						with the best possible experience. Become part of Bridge
-						today!
-					</p>
+					<p>Join us in building the future of digital commerce</p>
 				</div>
 
 				<div className="input__form">

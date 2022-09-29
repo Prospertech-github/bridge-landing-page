@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { links } from '../../data/data';
-import Logo from '../../assets/Group 6.png';
+import Logo from '../../assets/bridgeLogo.png';
 import { GoThreeBars } from 'react-icons/go';
 import { MdOutlineClose } from 'react-icons/md';
 
