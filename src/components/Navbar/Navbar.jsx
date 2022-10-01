@@ -10,10 +10,14 @@ import './Navbar.css';
 
 const Navbar = () => {
 	const [isNavShowing, setIsNavShowing] = useState(false);
-	const navLinks = document.querySelector('.navLinks');
+	// const navLinks = document.querySelector('.navLinks');
+
+
 	const slideUp = () => {
+		const navLinks = document.querySelector('.navLinks');
 		navLinks.style.top = '-100%';
 	}
+
 	const scrollFunction = (e) => {
 		if (e.target.id === "About") {
 			if (isNavShowing) slideUp();
@@ -30,15 +34,16 @@ const Navbar = () => {
 	const showMenu = (e) => {
 		console.log('fresh');
 		console.log(e)
+		const navLinks = document.querySelector('.navLinks');
 		navLinks.style.display = 'flex'
 		navLinks.style.top = '0';
 		console.log(isNavShowing)
 
 		setIsNavShowing(true);
 	}
+
 	const closeMenu = () => {
 		console.log(isNavShowing);
-
 		slideUp();
 			
 
