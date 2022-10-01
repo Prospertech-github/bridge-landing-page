@@ -82,6 +82,14 @@
 		margin-top: 80px;
 	}
   .services{
-    width: 88%;
+    width: 95%;
   }
+	.services-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 2rem;
+}
 }
