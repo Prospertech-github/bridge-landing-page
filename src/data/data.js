@@ -1,10 +1,10 @@
 export const links = [
 	{
 		name: 'About',
-		path: '/about',
+		path: '/',
 	},
 	{
 		name: 'Contact',
-		path: '/contact',
+		path: '/',
 	},
 ];

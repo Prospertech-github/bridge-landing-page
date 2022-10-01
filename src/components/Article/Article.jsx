@@ -7,7 +7,7 @@ import './Article.css';
 
 const Article = () => {
 	return (
-		<div className="container article__container">
+		<div className="container article__container" id='about'>
 			<div className="services-container">
 
 			<article className="services">

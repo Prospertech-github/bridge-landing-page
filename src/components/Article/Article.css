@@ -1,7 +1,6 @@
 .article__container {
 	margin-top: 15rem;
-	/* gap: 5rem; */
-	padding: 1rem;
+	padding: 5rem 1rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;

@@ -10,52 +10,122 @@ import './Navbar.css';
 
 const Navbar = () => {
 	const [isNavShowing, setIsNavShowing] = useState(false);
+	const navLinks = document.querySelector('.navLinks');
+	const slideUp = () => {
+		navLinks.style.top = '-100%';
+	}
+	const scrollFunction = (e) => {
+		if (e.target.id === "About") {
+			if (isNavShowing) slideUp();
+			document.querySelector('#about').scrollIntoView();
+
+		}
+		
+		if (e.target.id === "Contact") {
+			if(isNavShowing) slideUp();
+			document.querySelector('#contact').scrollIntoView();
+		}
+
+	}
+	const showMenu = () => {
+		console.log('fresh');
+		navLinks.style.display = 'flex'
+		navLinks.style.top = '0';
+		console.log(isNavShowing)
+
+		setIsNavShowing(true);
+		console.log(isNavShowing)
+	}
+	const closeMenu = () => {
+		console.log(isNavShowing);
+
+		slideUp();
+			
+
+		// if (isNavShowing) {
+		// 	navLinks.style.top = '-100%';
+		// } else {
+		// 	return
+		// }
+
+		// isNavShowing ? (navLinks.style.top = '-100%') : '';
+	};
+
 	return (
+		// <nav>
+		// 	<div className="nav__container">
+		// 		<Link
+		// 			to="/"
+		// 			className="logo"
+		// 			onClick={() => isNavShowing(false)}
+		// 		>
+		// 			<img src={Logo} alt="logo" />
+		// 		</Link>
+		// 		<ul
+		// 			className={`nav__links ${
+		// 				isNavShowing ? 'show__nav' : 'hide__nav'
+		// 			}`}
+		// 		>
+		// 			{links.map(({ name, path }, index) => {
+		// 				return (
+		// 						<button onClick={scrollFunction}>
+		// 							Scroll Button
+		// 						</button>
+		// 					<li key={index}>
+		// 						<NavLink
+		// 							to={path}
+		// 							className={({ isActive }) =>
+		// 								isActive ? 'active-nav' : ''
+		// 							}
+		// 							onClick={() => {
+		// 								setIsNavShowing(prev => !prev);
+		// 								scrollFunction()
+		// 							}
+		// 							}
+		// 						>
+		// 							{name}
+		// 						</NavLink>
+		// 					</li>
+		// 				);
+		// 			})}
+		// 		</ul>
+		// 		<button
+		// 			class="nav__toggle-btn"
+		// 			onClick={() => setIsNavShowing(prev => !prev)}
+		// 		>
+		// 			{isNavShowing ? <MdOutlineClose /> : <GoThreeBars />}
+		// 		</button>
+		// 		{/* <ul className='nav__links'>
+		//       <li><a href='#about'>About</a></li>
+		//       <li><a href='#blog'>Blog</a></li>
+		//       <li><a href='#contact'>Contact</a></li>
+		//     </ul>
+		//     <button className="nav__toggle-btn"><GoThreeBars/></button> */}
+		// 	</div>
+		// </nav>
+
 		<nav>
-			<div className="nav__container">
-				<Link
-					to="/"
-					className="logo"
-					onClick={() => isNavShowing(false)}
-				>
+			<div className="logo">
+				<Link to="/">
 					<img src={Logo} alt="logo" />
 				</Link>
-				<ul
-					className={`nav__links ${
-						isNavShowing ? 'show__nav' : 'hide__nav'
-					}`}
-				>
-					{links.map(({ name, path }, index) => {
-						return (
-							<li key={index}>
-								<NavLink
-									to={path}
-									className={({ isActive }) =>
-										isActive ? 'active-nav' : ''
-									}
-									onClick={() =>
-										setIsNavShowing(prev => !prev)
-									}
-								>
-									{name}
-								</NavLink>
-							</li>
-						);
-					})}
-				</ul>
-				<button
-					class="nav__toggle-btn"
-					onClick={() => setIsNavShowing(prev => !prev)}
-				>
-					{isNavShowing ? <MdOutlineClose /> : <GoThreeBars />}
-				</button>
-				{/* <ul className='nav__links'>
-          <li><a href='#about'>About</a></li>
-          <li><a href='#blog'>Blog</a></li>
-          <li><a href='#contact'>Contact</a></li>
-        </ul>
-        <button className="nav__toggle-btn"><GoThreeBars/></button> */}
 			</div>
+			<div className="openMenu">
+				<GoThreeBars onClick={showMenu}/>
+			</div>
+
+			<ul className="navLinks">
+				{links.map(({ name, path }, index) => {
+					return (
+						<li key={index}>
+							<button className="links" onClick={scrollFunction} id={name}>{name}</button>
+						</li>
+					);
+				})}
+				<div className="closeMenu">
+					<MdOutlineClose onClick={closeMenu}/>
+				</div>
+			</ul>
 		</nav>
 	);
 };
