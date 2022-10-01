@@ -27,14 +27,14 @@ const Navbar = () => {
 		}
 
 	}
-	const showMenu = () => {
+	const showMenu = (e) => {
 		console.log('fresh');
+		console.log(e)
 		navLinks.style.display = 'flex'
 		navLinks.style.top = '0';
 		console.log(isNavShowing)
 
 		setIsNavShowing(true);
-		console.log(isNavShowing)
 	}
 	const closeMenu = () => {
 		console.log(isNavShowing);
