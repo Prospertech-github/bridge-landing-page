@@ -115,81 +115,100 @@
 		display: none;
 	}
 } */
-nav{
+nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 40px;
 }
-.logo{
+.logo {
 	width: 4rem;
 	height: 4rem;
 }
-.logo img{
+.logo img {
 	width: 100%;
 }
-nav .navLinks{
+nav .navLinks {
 	display: flex;
 	gap: 3rem;
 	list-style: none;
 }
-.links{
+.links {
 	font-size: 18px;
 	background: transparent;
 	padding: 20px;
 	cursor: pointer;
 }
 
-.openMenu{
+.openMenu {
 	font-size: 2rem;
 	cursor: pointer;
 	display: none;
 }
-.closeMenu{
+.closeMenu {
 	font-size: 2.5rem;
 	cursor: pointer;
 	display: none;
 }
-.hide{
-  transform: translateY(-100%);
+.hide {
+	transform: translateY(-100%);
+}
+nav.scrolled {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	background-color: #fff;
+	opacity: 1;
+	box-shadow: 2px 4px 3px #888;
 }
 
-@media screen and (max-width: 540px){
-	nav{
+@media screen and (max-width: 540px) {
+	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 15px 10px;
 	}
-	.logo{
+	nav.scrolled {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		background-color: #fff;
+		opacity: 1;
+		
+		box-shadow: 2px 4px 3px #888;
+	}
+	.logo {
 		width: 3rem;
 		height: 3rem;
 	}
-	nav .navLinks{
+	nav .navLinks {
 		height: 40%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0;
-    background: rgb(4, 150, 255);
-    display: none;
-    transition: all 1s ease;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 0;
+		color: rgb(4, 150, 255);
+		display: none;
+		background: #fff;
+		box-shadow: 2px 3px 3px #888;
+		transition: all 1s ease;
 	}
-	.links{
-		color: #fff;
+	.links {
+		color: rgb(4, 150, 255);
 	}
-	.openMenu{
+	.openMenu {
 		display: block;
 	}
-	.closeMenu{
+	.closeMenu {
 		display: block;
 		position: absolute;
-    top: 18px;
-    right: 10px;
-		color: #fff;
+		top: 18px;
+		right: 10px;
+		color: rgb(4, 150, 255);
 	}
 }

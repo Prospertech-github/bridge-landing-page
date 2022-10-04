@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { links } from '../../data/data';
 import Logo from '../../assets/bridgeLogo.png';
 import { GoThreeBars } from 'react-icons/go';
@@ -10,8 +10,16 @@ import './Navbar.css';
 
 const Navbar = () => {
 	const [isNavShowing, setIsNavShowing] = useState(false);
+	const [isActve, setIsActive] = useState(false);
 	// const navLinks = document.querySelector('.navLinks');
 
+	document.addEventListener('scroll', e => {
+		if (window.scrollY > 150) {
+			setIsActive(true);
+		} else {
+			setIsActive(false);
+		}
+	});
 
 	const slideUp = () => {
 		const navLinks = document.querySelector('.navLinks');
@@ -45,19 +53,45 @@ const Navbar = () => {
 	const closeMenu = () => {
 		console.log(isNavShowing);
 		slideUp();
-			
-
-		// if (isNavShowing) {
-		// 	navLinks.style.top = '-100%';
-		// } else {
-		// 	return
-		// }
-
-		// isNavShowing ? (navLinks.style.top = '-100%') : '';
 	};
 
 	return (
-		// <nav>
+		<nav className={`${isActve ? 'scrolled' : ''}`}>
+			<div className="logo">
+				<Link to="/">
+					<img src={Logo} alt="logo" />
+				</Link>
+			</div>
+			<div className="openMenu">
+				<GoThreeBars onClick={showMenu} />
+			</div>
+
+			<ul className="navLinks">
+				{links.map(({ name, path }, index) => {
+					return (
+						<li key={index}>
+							<button
+								className="links"
+								onClick={scrollFunction}
+								id={name}
+							>
+								{name}
+							</button>
+						</li>
+					);
+				})}
+				<div className="closeMenu">
+					<MdOutlineClose onClick={closeMenu} />
+				</div>
+			</ul>
+		</nav>
+	);
+};
+
+export default Navbar;
+
+
+// <nav>
 		// 	<div className="nav__container">
 		// 		<Link
 		// 			to="/"
@@ -109,30 +143,10 @@ const Navbar = () => {
 		// 	</div>
 		// </nav>
 
-		<nav>
-			<div className="logo">
-				<Link to="/">
-					<img src={Logo} alt="logo" />
-				</Link>
-			</div>
-			<div className="openMenu">
-				<GoThreeBars onClick={showMenu}/>
-			</div>
+		// if (isNavShowing) {
+		// 	navLinks.style.top = '-100%';
+		// } else {
+		// 	return
+		// }
 
-			<ul className="navLinks">
-				{links.map(({ name, path }, index) => {
-					return (
-						<li key={index}>
-							<button className="links" onClick={scrollFunction} id={name}>{name}</button>
-						</li>
-					);
-				})}
-				<div className="closeMenu">
-					<MdOutlineClose onClick={closeMenu}/>
-				</div>
-			</ul>
-		</nav>
-	);
-};
-
-export default Navbar;
+		// isNavShowing ? (navLinks.style.top = '-100%') : '';

@@ -19,6 +19,7 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 	margin-inline: auto;
+	scroll-behavior: smooth;
 }
 
 :root {
