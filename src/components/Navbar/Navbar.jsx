@@ -40,8 +40,6 @@ const Navbar = () => {
 
 	}
 	const showMenu = (e) => {
-		console.log('fresh');
-		console.log(e)
 		const navLinks = document.querySelector('.navLinks');
 		navLinks.style.display = 'flex'
 		navLinks.style.top = '0';
