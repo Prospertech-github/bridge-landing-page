@@ -23,7 +23,7 @@ const Navbar = () => {
 
 	const slideUp = () => {
 		const navLinks = document.querySelector('.navLinks');
-		navLinks.style.top = '-100%';
+		navLinks.style.left = '-100%';
 	}
 
 	const scrollFunction = (e) => {
@@ -43,6 +43,10 @@ const Navbar = () => {
 		const navLinks = document.querySelector('.navLinks');
 		navLinks.style.display = 'flex'
 		navLinks.style.top = '0';
+		navLinks.style.transform = 'translateX(0px)';
+		navLinks.style.left = '0';
+		navLinks.style.width = '100%';
+
 		console.log(isNavShowing)
 
 		setIsNavShowing(true);
