@@ -16,7 +16,7 @@ const Article = () => {
 				</div>
 				<div class="article__right">
 					<h3> Inventory</h3>
-					<p>Live records of every product, everytime.</p>
+					<p> Never lose track of stock anytime </p>
 				</div>
 			</article>
 
@@ -26,7 +26,7 @@ const Article = () => {
 				</div>
 				<div class="article__right">
 					<h3 class="blue-text"> Invoicing</h3>
-					<p>Bill customers and collect payments faster.</p>
+					<p>Send bills and process payments faster</p>
 				</div>
 			</article>
 
@@ -36,7 +36,7 @@ const Article = () => {
 				</div>
 				<div class="article__right">
 					<h3 class="blue-text"> Book-Keeping </h3>
-					<p>Every sale recorded for valuable insights.</p>
+					<p>Every transaction recorded for valuable insights.</p>
 				</div>
 			</article>
 
@@ -46,7 +46,7 @@ const Article = () => {
 				</div>
 				<div class="article__right">
 					<h3>Customer Management</h3>
-					<p>Vital information when you need it.</p>
+					<p>Respond to customers needs in an instant</p>
 				</div>
 			</article>
 			</div>

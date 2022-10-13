@@ -10,14 +10,13 @@ const Mainheader = () => {
 				<div className=" container main__header">
 					<div className="header-writeup1">
 						<h3>
-							Your Mobile <span>Business App</span>{' '}
+							Do <span>Business</span> The Way You Imagined
 						</h3>
 					</div>
 					<div className="header-writeup2">
 						<p>
-							Take full control of your business with robust
-							inventory, accounting, invoicing and customer
-							management
+							Send invoices, process payments, control your
+							inventory and more, all on one platform.
 						</p>
 					</div>
 				</div>

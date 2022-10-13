@@ -11,18 +11,16 @@ const Section4 = () => {
 					<img className="ellipse-img" src={Ellipse} alt="ellipse" />
 				</div>
 				<div class="main__header-left">
-					<img src={Image} alt="image" />
+					<img src={Image} alt="Do It with ease" />
 				</div>
 
 				<div class="main__header-right">
 					<h3>
-						<span>Managing</span> your business conviniently from
-						anywhere
+						Make <span>technology</span> work for your business
 					</h3>
 					<p>
-						We are working round the clock to make sure we serve you
-						with the best possible experience. Become part of Bridge
-						today!
+						Simple, innovative tools to help you run your business
+						conveniently from anywhere.
 					</p>
 				</div>
 			</div>

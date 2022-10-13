@@ -8,11 +8,14 @@ const Mainheader2 = () => {
 			<div className=" container main__head">
 				<div className="head-writeup1">
 					<h3>
-						<span>Join us</span> when we launch
+						Be the first on the <span>Bridge</span>
 					</h3>
 				</div>
 				<div className="head-writeup2">
-					<p>Join us in building the future of digital commerce</p>
+					<p>
+						Stay updated on everything as we build this game
+						changing solution.
+					</p>
 				</div>
 
 				<div className="input__form">
@@ -28,7 +31,7 @@ const Mainheader2 = () => {
 						/>
 					</div>
 					<button className="sub-button" type="submit">
-						Get access
+						Join Our Waitlist
 					</button>
 				</div>
 			</div>
