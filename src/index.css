@@ -20,7 +20,9 @@ body {
 	margin-inline: auto;
 	scroll-behavior: smooth;
 }
-
+html{
+	font-size: 10px;
+}
 :root {
 	--container-width-lg: 80%;
 	--container-width-md: 90%;

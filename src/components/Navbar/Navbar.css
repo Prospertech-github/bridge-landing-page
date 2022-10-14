@@ -1,147 +1,28 @@
-/* nav {
-	height: 5rem;
-	display: grid;
-	z-index: 99;
-	padding: 2rem 3rem;
-}
-
-/* only show on medium and small devices
-.nav__toggle-btn {
-	display: none;
-}
-.nav__container {
-	display: flex;
-	height: 100%;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-}
-
-.nav__links {
-	display: flex;
-	gap: 4rem;
-	align-items: center;
-}
-
-.nav__links a {
-	transition: all 500ms ease;
-	color: #2d3134;
-}
-.nav__links a:hover {
-	color: rgb(4, 150, 255);
-}
-
-.active-nav {
-	position: relative;
-}
-.show__nav {
-	/* width: 100%; 
-	/* background: rgb(4, 150, 255);
-	/* background: red; 
-}
-/* .active-nav::after {
-	content: '';
-	display: block;
-	width: 2rem;
-	height: 0.2rem;
-	background: rgb(4, 150, 255);
-	position: absolute;
-} 
-
-/* Media  Queries (for medium and small screen
-@media screen and (max-width: 540px) {
-	nav {
-		width: 100%;
-		padding: 20px 0.5rem;
-		height: 96px;
-	}
-	.nav__toggle-btn {
-		display: inline-block;
-		background: transparent;
-		font-size: 1.8rem;
-		cursor: pointer;
-	}
-	.nav__links {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		flex-direction: column;
-		gap: 0;
-		align-items: center;
-		justify-content: center;
-	}
-	.logo{
-		width: 3.5rem;
-		height: 3.5rem;
-	}
-	.logo img{
-		width: 100%;
-	}
-	.active-nav,
-	.active-nav::after {
-		display: none;
-	}
-	.nav__links{
-		display: none;
-	}
-
-	.nav__links li {
-		height: 8rem;
-		width: 100%;
-		box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.1);
-	}
-
-	.nav__links li a {
-		/* background: rgb(4, 150, 255); 
-		height: 100%;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		padding: 1rem 5rem 1rem 3rem;
-		color: white;
-	}
-
-	.nav__links a:hover {
-		color: #2d3134;
-	}
-
-	.show__nav {
-		display: flex;
-	}
-
-	.hide__nav {
-		display: none;
-	}
-} */
 nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 40px;
-	/* border: 2px solid; */
+	padding: 2.5rem 5rem;
 }
 .logo {
-	width: 4rem;
-	height: 4rem;
+	width: 14rem;
+	height: 5rem;
 }
 .logo img {
 	width: 100%;
 }
 nav .navLinks {
 	display: flex;
-	gap: 3rem;
+	gap: 4.5rem;
 	list-style: none;
 }
 .links {
-	font-size: 18px;
+	font-size: 2rem;
 	background: transparent;
-	padding: 20px;
+	padding: 2rem;
 	cursor: pointer;
 }
-
 .openMenu {
 	font-size: 2rem;
 	cursor: pointer;
@@ -164,12 +45,12 @@ nav.scrolled {
 	box-shadow: 2px 4px 3px #888;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 840px) {
 	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 15px 10px;
+		padding: 1.8rem 3rem;
 	}
 	nav.scrolled {
 		position: sticky;
@@ -177,59 +58,6 @@ nav.scrolled {
 		z-index: 20;
 		background-color: #fff;
 		opacity: 1;
-		
-		box-shadow: 2px 0px 3px #888;
-	}
-	.logo {
-		width: 3rem;
-		height: 3rem;
-	}
-	nav .navLinks {
-		height: 40%;
-		position: fixed;
-		top: 0;
-		/* left: 0; */
-		/* right: 0; */
-		transform: translateX(-1000%);
-		z-index: 10;
-		flex-direction: column;
-		align-items: center;
-		padding: 30px 0;
-		color: rgb(4, 150, 255);
-		display: none;
-		background: #fff;
-		box-shadow: 2px 3px 3px #888;
-		transition: all 1s ease;
-	}
-	.links {
-		color: rgb(4, 150, 255);
-	}
-	.openMenu {
-		display: block;
-	}
-	.closeMenu {
-		display: block;
-		position: absolute;
-		top: 18px;
-		right: 10px;
-		color: rgb(4, 150, 255);
-	}
-}
-
-@media screen and (max-width: 800px) {
-	nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 18px 30px;
-	}
-	nav.scrolled {
-		position: sticky;
-		top: 0;
-		z-index: 20;
-		background-color: #fff;
-		opacity: 1;
-		
 		box-shadow: 2px 4px 3px #888;
 	}
 	.logo {
@@ -245,7 +73,7 @@ nav.scrolled {
 		z-index: 10;
 		flex-direction: column;
 		align-items: center;
-		padding: 30px 0;
+		padding: 3rem 0;
 		color: rgb(4, 150, 255);
 		display: none;
 		background: #fff;
@@ -263,6 +91,56 @@ nav.scrolled {
 		position: absolute;
 		top: 18px;
 		right: 60px;
+		color: rgb(4, 150, 255);
+	}
+}
+
+@media screen and (max-width: 540px) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.5rem 1rem;
+	}
+	nav.scrolled {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		background-color: #fff;
+		opacity: 1;
+
+		box-shadow: 2px 0px 3px #888;
+	}
+	.logo {
+		width: 3rem;
+		height: 3rem;
+	}
+	nav .navLinks {
+		height: 40%;
+		position: fixed;
+		top: 0;
+		transform: translateX(-1000%);
+		z-index: 10;
+		flex-direction: column;
+		align-items: center;
+		padding: 3rem 0;
+		color: rgb(4, 150, 255);
+		display: none;
+		background: #fff;
+		box-shadow: 2px 3px 3px #888;
+		transition: all 1s ease;
+	}
+	.links {
+		color: rgb(4, 150, 255);
+	}
+	.openMenu {
+		display: block;
+	}
+	.closeMenu {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
 		color: rgb(4, 150, 255);
 	}
 }

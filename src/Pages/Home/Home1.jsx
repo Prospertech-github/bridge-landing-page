@@ -5,7 +5,6 @@ import Headerimg from '../../components/Headerimage/Headerimg';
 import Mainheader from '../../components/Mainheader/Mainheader';
 import Mainheader2 from '../../components/Mainheader2/Mainheader2';
 import Section4 from '../../components/Section 4/Section4';
-import Section5 from '../../components/Section5/Section5';
 
 const Home = () => {
 	return (
@@ -15,7 +14,6 @@ const Home = () => {
 			<Mainheader2 />
 			<Section4 />
 			<Article />
-			<Section5 />
 			<Footer />
 		</div>
 	);

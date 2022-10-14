@@ -2,7 +2,7 @@
 	width: 100%;
 	display: grid;
 	place-items: center;
-	margin-top: 12rem;
+	margin-top: 15rem;
 }
 
 .header-writeup1 {
@@ -12,28 +12,29 @@
 	width: 80%;
 }
 .header-writeup1 h3 {
-	font-size: 50px;
+	font-size: 7.2rem;
+	line-height: 1.4;
 	font-weight: bold;
 }
-
 .header-writeup1 span {
 	color: rgb(4, 150, 255);
 }
 .header-writeup2 {
-	margin-top: 1rem;
-	width: 38%;
+	margin-top: 2.4rem;
+	width: 50%;
 }
 .header-writeup2 p {
 	font-weight: light;
 	line-height: 1.5;
+	font-size: 2.4rem;
 	width: 100%;
 	height: 100%;
 	text-align: center;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 840px) {
 	.main__header {
-		margin-top: 120px;
+		margin-top: 12rem;
 		gap: 1rem;
 	}
 	.header-writeup1 {
@@ -41,39 +42,37 @@
 	}
 
 	.header-writeup1 h3 {
-		font-size: 30px;
+		font-size: 4.5rem;
 	}
 	.header-writeup2 {
-		width: 75%;
-		margin-top: 18px;
+		width: 70%;
+		margin-top: 0.8rem;
 	}
 	.header-writeup2 p {
-		font-size: 12px;
+		font-size: 1.8rem;
 		text-align: center;
 		line-break: none !important;
 		width: 100%;
 	}
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 540px) {
 	.main__header {
-		margin-top: 120px;
+		margin-top: 12rem;
 		gap: 1rem;
 	}
 	.header-writeup1 {
 		width: var(--container-width-sm);
 	}
-
 	.header-writeup1 h3 {
-		font-size: 45px;
+		font-size: 3rem;
 	}
 	.header-writeup2 {
-		width: 70%;
-		margin-top: 8px;
+		width: 75%;
+		margin-top: 1.8rem;
 	}
 	.header-writeup2 p {
-		font-size: 18px;
+		font-size: 1.2rem;
 		text-align: center;
 		line-break: none !important;
 		width: 100%;

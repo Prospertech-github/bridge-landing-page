@@ -4,7 +4,7 @@ import {FiInstagram} from 'react-icons/fi';
 import {IoLogoTwitter} from 'react-icons/io';
 import {FaLinkedinIn} from 'react-icons/fa';
 import './Footer.css';
-import Logo from '../../assets/Group 24.png'
+import Logo from '../../assets/bridgeLogoWhite.png'
 
 const Footer = () => {
   return (

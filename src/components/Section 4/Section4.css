@@ -1,14 +1,14 @@
 .main__header-section4 {
 	height: 100%;
-	margin-top: 5rem;
+	margin-top: 12rem;
 }
 .main__header-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 4rem;
+	gap: 11rem;
 	position: relative;
-	padding: 1rem 4rem;
+	padding: 0rem 5rem;
 }
 .ellipse-div {
 	position: absolute;
@@ -17,8 +17,9 @@
 	z-index: -10;
 }
 .main__header-right h3 {
-	width: 90%;
-	font-size: 2.5rem;
+	width: 100%;
+	font-size: 4.8rem;
+	line-height: 1.4;
 }
 .main__header-right span {
 	color: #0496ff;
@@ -26,12 +27,54 @@
 .main__header-right p {
 	margin-top: 1rem;
 	text-align: start;
-	line-height: 1.5rem;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 840px) {
+	.main__header-section4 {
+		margin-top: 15rem;
+	}
+	.main__header-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		position: relative;
+		padding: 0;
+	}
+	.main__header-left {
+		border-radius: 5%;
+		width: 60%;
+	}
+	.main__header-left img {
+		width: 100%;
+	}
+	.main__header-right {
+		margin-top: 9rem;
+		padding-left: 1rem;
+		width: 80%;
+	}
+	.main__header-right p {
+		font-size: 0.8rem;
+		line-height: 1.8;
+		width: 90%;
+	}
+	.main__header-right h3 {
+		font-size: 2rem;
+		width: 100%;
+	}
+	.ellipse-div {
+		position: absolute;
+		top: 30%;
+		left: -1%;
+		z-index: -10;
+	}
 }
 
 @media screen and (max-width: 540px) {
-	.main__header-section4{
-		margin-top: 80px;
+	.main__header-section4 {
+		margin-top: 8rem;
 	}
 	.main__header-container {
 		width: 100%;
@@ -49,7 +92,7 @@
 		width: 100%;
 	}
 	.main__header-right {
-		margin-top: 90px;
+		margin-top: 9rem;
 		padding-left: 1rem;
 		width: 100%;
 	}
@@ -68,50 +111,6 @@
 		position: absolute;
 		top: 15%;
 		left: -25%;
-		z-index: -10;
-	}
-}
-
-
-@media screen and (max-width: 800px) {
-	.main__header-section4{
-		margin-top: 150px;
-	}
-	.main__header-container {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 4rem;
-		position: relative;
-		padding: 0;
-	}
-	.main__header-left {
-		border-radius: 5%;
-		width: 60%;
-	}
-	.main__header-left img {
-		width: 100%;
-	}
-	.main__header-right {
-		margin-top: 90px;
-		padding-left: 1rem;
-		width: 80%;
-	}
-
-	.main__header-right p {
-		font-size: 0.8rem;
-		line-height: 1.8;
-		width: 90%;
-	}
-
-	.main__header-right h3 {
-		font-size: 2rem;
-		width: 100%;
-	}
-	.ellipse-div {
-		position: absolute;
-		top: 30%;
-		left: -1%;
 		z-index: -10;
 	}
 }

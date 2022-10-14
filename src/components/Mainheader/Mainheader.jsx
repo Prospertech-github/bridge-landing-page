@@ -10,7 +10,7 @@ const Mainheader = () => {
 				<div className=" container main__header">
 					<div className="header-writeup1">
 						<h3>
-							Do <span>Business</span> The Way You Imagined
+							Do <span>Business</span> the way you imagined
 						</h3>
 					</div>
 					<div className="header-writeup2">

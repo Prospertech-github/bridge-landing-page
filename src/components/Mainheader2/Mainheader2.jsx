@@ -21,7 +21,7 @@ const Mainheader2 = () => {
 				<div className="input__form">
 					<div className="input__div">
 						<i className="icon1">
-							<FiMail />
+							<FiMail className='form-icon'/>
 						</i>
 						<input
 							className="input__field"

@@ -1,16 +1,14 @@
 .img__header {
 	width: 100%;
-	padding: 1rem 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2rem;
+	margin-top: 6.43rem;
 }
 .first__img {
 	position: relative;
 	align-items: center;
 }
-
 .first__img img {
 	width: 100%;
 }
@@ -18,7 +16,7 @@
 @media screen and (max-width: 540px) {
 	.img__header {
 		padding: 0;
-		margin-top: 32px;
+		margin-top: 3.2rem;
 	}
 	.first__img img {
 		width: 750px;
