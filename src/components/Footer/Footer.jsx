@@ -11,7 +11,7 @@ const Footer = () => {
 		<footer>
 			<div class="footer__socials">
 				<a href="https://www.facebook.com">
-					<FaFacebookF className="footer-icon" />
+					<FaFacebookF className="footer-icon" /> 
 				</a>
 				<a href="https://instagram.com">
 					<FiInstagram className="footer-icon" />

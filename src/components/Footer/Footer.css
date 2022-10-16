@@ -1,27 +1,29 @@
 footer {
 	background: black;
-	padding: 2rem;
+	height: 17rem;
 	text-align: center;
 	font-size: 2rem;
 	margin-top: 15rem;
 	display: flex;
+	align-items: center;
 	justify-content: space-around;
 }
 .footer__logo {
 	font-size: 2rem;
-	width: 10rem;
+	width: 20rem;
 	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 }
 .footer__logo img {
-	width: 7rem;
+	width: 80%;
 }
 .footer__socials {
 	display: flex;
 	justify-content: center;
-	gap: 1rem;
-	height: fit-content;
-	height: fit-content;
+	gap: 3rem;
 	margin-top: -1rem;
 	padding: 0.5rem 1rem;
 }
@@ -29,7 +31,7 @@ footer {
 	color: #af812d;
 }
 .footer__copyright small {
-	font-size: 16px;
+	font-size: 2rem;
 	text-align: center;
 }
 .footer-icon {
@@ -42,8 +44,39 @@ footer {
 }
 .footer__socials a {
 	color: #af812d;
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 4.8rem;
+	height: 4.8rem;
+}
+
+@media screen and (max-width: 840px) {
+	footer {
+		padding: 2rem 1rem;
+		align-items: center;
+		gap: 1rem;
+	}
+	.footer__logo {
+		margin-left: 0rem;
+	}
+	.footer__socials a {
+		width: 5.5rem;
+		height: 5.5rem;
+		display: flex;
+		align-items: center;
+	}
+	.footer__copyright small {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.footer-icon {
+		font-size: 2.4rem;
+		text-align: center;
+		padding: 0.5rem;
+		height: 80%;
+		width: 80%;
+	}
+	.footer__socials {
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -59,46 +92,15 @@ footer {
 		width: 100%;
 	}
 	.footer__socials a {
-		width: 50px;
-		height: 50px;
+		width: 5rem;
+		height: 5rem;
 	}
 	.footer-icon {
-		font-size: 24px;
+		font-size: 2.4rem;
 		text-align: center;
 		margin: auto;
 		padding: 0.5rem;
 		height: 80%;
 		width: 80%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	footer {
-		padding: 2rem 1rem;
-		align-items: center;
-		gap: 1rem;
-	}
-	.footer__logo {
-		margin-left: 0rem;
-	}
-	.footer__socials a {
-		width: 55px;
-		height: 55px;
-		display: flex;
-		align-items: center;
-	}
-	.footer__copyright small {
-		font-size: 12px;
-		text-align: center;
-	}
-	.footer-icon {
-		font-size: 24px;
-		text-align: center;
-		padding: 0.5rem;
-		height: 80%;
-		width: 80%;
-	}
-	.footer__socials {
-		padding: 0;
 	}
 }
