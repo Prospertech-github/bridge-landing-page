@@ -17,7 +17,7 @@
 	font-weight: bold;
 }
 .header-writeup1 span {
-	color: rgb(4, 150, 255);
+	color: rgb(41, 101, 255);
 }
 .header-writeup2 {
 	margin-top: 2.4rem;
@@ -65,16 +65,15 @@
 		width: var(--container-width-sm);
 	}
 	.header-writeup1 h3 {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 	.header-writeup2 {
-		width: 75%;
+		width: 90%;
 		margin-top: 1.8rem;
 	}
 	.header-writeup2 p {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		text-align: center;
-		line-break: none !important;
 		width: 100%;
 	}
 }

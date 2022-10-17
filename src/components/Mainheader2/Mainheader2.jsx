@@ -4,7 +4,7 @@ import './Mainheader2.css';
 
 const Mainheader2 = () => {
 	return (
-		<div>
+		<div id="waitlist">
 			<div className=" container main__head">
 				<div className="head-writeup1">
 					<h3>
@@ -25,7 +25,7 @@ const Mainheader2 = () => {
 						</i>
 						<input
 							className="input__field"
-							type="text"
+							type="email"
 							placeholder="Enter your email address"
 							focus
 						/>

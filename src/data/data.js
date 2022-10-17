@@ -1,10 +1,12 @@
 export const links = [
 	{
 		name: 'About',
+		id: 'about',
 		path: '/',
 	},
 	{
-		name: 'Contact',
+		name: 'Join Waitlist',
+		id: 'waitlist',
 		path: '/',
 	},
 ];

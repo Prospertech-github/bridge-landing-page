@@ -3,7 +3,7 @@ import './Section5.css';
 
 const Section5 = () => {
   return (
-		<div className=" container main__head-section5" id='contact'>
+		<div className=" container main__head-section5">
 			<div className="heading-writeup1">
 				<h3>
 					Your<span> thoughts</span> matter to us

@@ -11,7 +11,6 @@ import './Navbar.css';
 const Navbar = () => {
 	const [isNavShowing, setIsNavShowing] = useState(false);
 	const [isActve, setIsActive] = useState(false);
-	// const navLinks = document.querySelector('.navLinks');
 
 	document.addEventListener('scroll', e => {
 		if (window.scrollY > 150) {
@@ -29,13 +28,15 @@ const Navbar = () => {
 	const scrollFunction = (e) => {
 		if (e.target.id === "About") {
 			if (isNavShowing) slideUp();
-			document.querySelector('#about').scrollIntoView();
+			document.querySelector('#about').scrollIntoView({behavior: "smooth", block:"center"});
 
 		}
 		
-		if (e.target.id === "Contact") {
+		if (e.target.id === "Join Waitlist") {
 			if(isNavShowing) slideUp();
-			document.querySelector('#contact').scrollIntoView();
+			document
+				.querySelector('#waitlist')
+				.scrollIntoView({ behavior: 'smooth', block: 'center' });
 		}
 
 	}
@@ -93,62 +94,3 @@ const Navbar = () => {
 export default Navbar;
 
 
-// <nav>
-		// 	<div className="nav__container">
-		// 		<Link
-		// 			to="/"
-		// 			className="logo"
-		// 			onClick={() => isNavShowing(false)}
-		// 		>
-		// 			<img src={Logo} alt="logo" />
-		// 		</Link>
-		// 		<ul
-		// 			className={`nav__links ${
-		// 				isNavShowing ? 'show__nav' : 'hide__nav'
-		// 			}`}
-		// 		>
-		// 			{links.map(({ name, path }, index) => {
-		// 				return (
-		// 						<button onClick={scrollFunction}>
-		// 							Scroll Button
-		// 						</button>
-		// 					<li key={index}>
-		// 						<NavLink
-		// 							to={path}
-		// 							className={({ isActive }) =>
-		// 								isActive ? 'active-nav' : ''
-		// 							}
-		// 							onClick={() => {
-		// 								setIsNavShowing(prev => !prev);
-		// 								scrollFunction()
-		// 							}
-		// 							}
-		// 						>
-		// 							{name}
-		// 						</NavLink>
-		// 					</li>
-		// 				);
-		// 			})}
-		// 		</ul>
-		// 		<button
-		// 			class="nav__toggle-btn"
-		// 			onClick={() => setIsNavShowing(prev => !prev)}
-		// 		>
-		// 			{isNavShowing ? <MdOutlineClose /> : <GoThreeBars />}
-		// 		</button>
-		// 		{/* <ul className='nav__links'>
-		//       <li><a href='#about'>About</a></li>
-		//       <li><a href='#blog'>Blog</a></li>
-		//       <li><a href='#contact'>Contact</a></li>
-		//     </ul>
-		//     <button className="nav__toggle-btn"><GoThreeBars/></button> */}
-		// 	</div>
-		// </nav>
-
-		// if (isNavShowing) {
-		// 	navLinks.style.top = '-100%';
-		// } else {
-		// 	return
-		// }
-
-		// isNavShowing ? (navLinks.style.top = '-100%') : '';

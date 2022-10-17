@@ -1,11 +1,11 @@
 .article__container {
-	margin-top: 25rem; 
+	margin-top: 25rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.services-container{
+.services-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -26,7 +26,7 @@
 }
 
 .article__left {
-	background: #00c868;
+	background: #ed9e35;
 	width: 8rem;
 	height: 7rem;
 	display: flex;
@@ -34,68 +34,54 @@
 	place-items: center;
 	justify-content: center;
 	border-radius: 50%;
-  color: #fff;
+	color: #fff;
 }
 .article__left.call-icon {
-	background: #ed474a;
+	background: #eb3d49;
+}
+.article__right .red-text {
+	color: #eb3d49;
 }
 .article__left.sheet-icon {
-	background: #0496ff;
+	background: rgb(41, 101, 252);
 	color: #fff;
 }
 .article__right .blue-text {
-	color: #0496ff;
+	color: rgb(41, 101, 252);
 }
-.article__right .red-text {
-	color: #ed474a;
+.article__left.bookkeeping-icon {
+	background-color: #973ecc;
+	color: #fff;
+}
+.article__right .purple-text {
+	color: #973ecc;
 }
 .article__right {
-  width: 100%;
+	width: 100%;
 	color: white;
 	line-height: 1.8;
 }
 
 .article__right h3 {
 	font-size: 2.4rem;
-	color: #00c868;
+	color: #ed9e35;
 }
 .article__right p {
 	line-height: 1.5;
 	font-size: 1.8rem;
 }
 
-.user,.docs, .clip {
+.user,
+.docs,
+.clip {
 	color: white;
 	width: 3rem;
 	font-size: 3rem;
 }
- .docs {
+/* .docs {
 	color: white !important;
 	margin-left: 0.4rem;
-}
-
-@media screen and (max-width: 540px) {
-	.article__container {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-		justify-content: center;
-		align-items: center;
-		margin-top: 8rem;
-	}
-  .services{
-    width: 95%;
-  }
-	.services-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	gap: 2rem;
-}
-}
-
+} */
 
 @media screen and (max-width: 840px) {
 	.article__container {
@@ -105,5 +91,37 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 5rem;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.article__container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+		padding-top: 10rem;
+	}
+	.services {
+		width: 90%;
+		padding: 0 3rem;
+	}
+	.services-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		gap: 3.2rem;
+	}
+	.article__right h3 {
+		font-size: 2rem;
+	}
+	.article__right p {
+		font-size: 1.6rem;
+	}
+	.services-container :nth-child(4) {
+		padding-bottom: 1rem;
 	}
 }

@@ -22,7 +22,7 @@
 	line-height: 1.4;
 }
 .main__header-right span {
-	color: #0496ff;
+	color: rgb(41, 101, 252);
 }
 .main__header-right p {
 	margin-top: 1rem;
@@ -98,14 +98,14 @@
 	}
 
 	.main__header-right p {
-		font-size: 0.8rem;
+		font-size: 1.4rem;
 		line-height: 1.8;
 		width: 90%;
 	}
 
 	.main__header-right h3 {
-		font-size: 2rem;
-		width: 100%;
+		font-size: 3rem;
+		width: 95%;
 	}
 	.ellipse-div {
 		position: absolute;
